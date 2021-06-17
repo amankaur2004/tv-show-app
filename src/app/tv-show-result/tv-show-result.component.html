@@ -1,0 +1,18 @@
+<div>
+  <div>
+    <span>Show:{{tvShow.name}} Cast:{{tvShow.cast}}</span>
+    <br />
+    <span>Date:{{tvShow.airdate | date:'fullDate'}}</span>
+  </div>
+  <div>
+    <img [src]='tvShow.image' />
+    <span>Rating:{{tvShow.rating}} </span>
+    <br /> 
+    <span>Creator:{{tvShow.creator}} </span>
+    <br />
+    <span>Genres:{{tvShow.genres}}</span>
+  </div>
+  <div>
+    {{tvShow.description}}
+  </div>
+</div>
