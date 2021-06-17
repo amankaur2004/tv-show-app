@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { TvShowResultComponent } from './tv-show-result/tv-show-result.component';
 import {HttpClientModule} from '@angular/common/http';
 import { TvService } from './tv.service';
+import { TvShowDetailsComponent } from './tv-show-details/tv-show-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TvShowResultComponent
+    TvShowResultComponent,
+    TvShowDetailsComponent
   ],
   imports: [
     BrowserModule,
