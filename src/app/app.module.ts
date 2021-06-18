@@ -7,12 +7,14 @@ import { TvShowResultComponent } from './tv-show-result/tv-show-result.component
 import {HttpClientModule} from '@angular/common/http';
 import { TvService } from './tv.service';
 import { TvShowDetailsComponent } from './tv-show-details/tv-show-details.component';
+import { TvSearchboxComponent } from './tv-searchbox/tv-searchbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TvShowResultComponent,
-    TvShowDetailsComponent
+    TvShowDetailsComponent,
+    TvSearchboxComponent
   ],
   imports: [
     BrowserModule,
