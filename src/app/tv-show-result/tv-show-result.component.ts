@@ -7,7 +7,7 @@ import { ITvShowApp } from '../i-tv-show-app';
   styleUrls: ['./tv-show-result.component.css']
 })
 export class TvShowResultComponent implements OnInit {
-  tvShow:ITvShowApp;   //create a variable tvShow
+  tvShow:ITvShowApp=;  
   constructor() { 
     
   }
