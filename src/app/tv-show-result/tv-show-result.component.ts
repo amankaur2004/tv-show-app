@@ -7,7 +7,16 @@ import { ITvShowApp } from '../i-tv-show-app';
   styleUrls: ['./tv-show-result.component.css']
 })
 export class TvShowResultComponent implements OnInit {
-  tvShow:ITvShowApp=;  
+  tvShow:ITvShowApp={
+    name: '',
+    rating: 0,
+    airdate: new Date(),
+    creator:'',
+    genres: '',
+    cast: '',
+     image: '',
+    description:''
+  } 
   constructor() { 
     
   }
