@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {InewTVshowData} from './inew-tvshow-data'
 import { ITvShowApp } from './i-tv-show-app';
 import { pipe } from 'rxjs';
+import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,12 @@ export class TvService {
 
     return this.httpClient.get<InewTVshowData> (
       `http://api.tvmaze.com/singlesearch/shows?q=:${name}`
-      pipe(
+
+    )
+      .pipe(
+
+        map(data => this.transformToItvshowApp(data))
+
     )
 
   }

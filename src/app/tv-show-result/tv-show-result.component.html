@@ -1,18 +1,41 @@
-<div>
+
   <div>
-    <span>Show Name:{{tvShow.name}}, Cast:{{tvShow.cast}}</span>
+    <span>Show Name:{{tvShow.name}}  
     <br />
-    <span>Date:{{tvShow.airdate | date:'fullDate'}}</span>
-  </div>
+  
+    
+  
   <div>
     <img [src]='tvShow.image' width="100" height="150"/>
     <span>Rating:{{tvShow.rating}} </span>
     <br /> 
-    <span>Creator:{{tvShow.creator}} </span>
-    <br />
+    
     <span>Genres:{{tvShow.genres}}</span>
   </div>
-  <div>
-    {{tvShow.description}}
-  </div>
-</div>
+  
+  
+   <span>{{tvShow.description}}</span> 
+ 
+
+
+   <!-- Below is Rupalis original data. 
+     
+    <div>
+    <div>
+      <span>Show Name:{{tvShow.name}} </span>, Cast:{{tvShow.cast}} 
+      <br />
+    </div>
+      <span>Date:{{tvShow.airdate | date:'fullDate'}}</span> 
+    
+    <div>
+      <img [src]='tvShow.image' width="100" height="150"/>
+      <span>Rating:{{tvShow.rating}} </span>
+      <br /> 
+      <span>Creator:{{tvShow.creator}} </span> 
+      <br />
+      <span>Genres:{{tvShow.genres}}</span>
+    </div>
+    <div>
+      {{tvShow.description}}
+    </div>
+  </div>   -->
