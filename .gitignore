@@ -43,10 +43,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-<<<<<<< HEAD
 
-=======
-# Add enviroment.ts
->>>>>>> 00bfcef91c1727297a65ccf12c0af41076e1a494
 ./src/environments
 src/environments/environment.ts

@@ -1,10 +1,11 @@
 export interface ITvShowApp {
   
   name: string,
+  id : number,
   rating: number,
-  //airdate: Date,
+  //airdate: string,
   //creator:string,
-  //genres: string,
+  genres: string,
   //cast: string,
    image: string,
   description:string

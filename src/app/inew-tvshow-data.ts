@@ -1,12 +1,14 @@
 export interface InewTVshowData {
     name : string,
+    id : number,
     rating : {
         average : number
     },
-    genres : [string], 
-    premiered: string,
+    genres : string[], 
+    //premiered: string,
     image : {
-        original:string
+        original:string, 
+
     }, 
     summary: string
 

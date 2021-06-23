@@ -14,7 +14,7 @@ export class TvService {
   getTvShowInformation(name : string){
 
     return this.httpClient.get<InewTVshowData> (
-      'http://singlesearch/shows?q=:name'
+      `http://api.tvmaze.com/singlesearch/shows?q=:${name}`
       pipe(
     )
 
@@ -22,10 +22,15 @@ export class TvService {
   private transformToItvshowApp (data : InewTVshowData) : ITvShowApp {
        return {
         name : data.name, 
+        id : data.id,
         rating: data.rating.average,
-        
-        image: data.image.original,
+        genres : data.genres[0],
+        image: `http://api.tvmaze.com/shows/${data.id}/images`,
         description:data.summary
        }
   }
 }
+
+
+
+
