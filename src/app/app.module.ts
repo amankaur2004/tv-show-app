@@ -8,6 +8,14 @@ import {HttpClientModule} from '@angular/common/http';
 import { TvService } from './tv.service';
 import { TvShowDetailsComponent } from './tv-show-details/tv-show-details.component';
 import { TvSearchboxComponent } from './tv-searchbox/tv-searchbox.component';
+import{FormsModule,ReactiveFormsModule}from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{MatButtonModule} from '@angular/material/button'
+import{MatToolbarModule} from '@angular/material/toolbar'
+import{MatIconModule} from '@angular/material/icon'
+import{MatCardModule} from '@angular/material/card'
+import{MatFormFieldModule} from '@angular/material/form-field';
+import{MatInputModule}from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -19,7 +27,17 @@ import { TvSearchboxComponent } from './tv-searchbox/tv-searchbox.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [TvService],
   bootstrap: [AppComponent]

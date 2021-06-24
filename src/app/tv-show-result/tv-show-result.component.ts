@@ -21,7 +21,7 @@ export class TvShowResultComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.tvService.getTvShowInformation('girl').subscribe(data => this.tvShow = data)
+    this.tvService.getTvShowInformation('stranger').subscribe(data => this.tvShow = data)
   }
 
 }

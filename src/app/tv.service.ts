@@ -31,7 +31,7 @@ export class TvService {
         id : data.id,
         rating: data.rating.average,
         genres : data.genres[0],
-        image: `http://api.tvmaze.com/shows/${data.id}/images`,
+        image: data.image.original,
         description:data.summary
        }
   }

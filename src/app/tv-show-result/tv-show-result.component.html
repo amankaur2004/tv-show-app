@@ -1,20 +1,21 @@
 
-  <div>
-    <span>Show Name:{{tvShow.name}}  
+  <div *ngIf="tvShow" class="api">
+    <span class="tvname">Show Name: {{tvShow.name}}</span>  
     <br />
   
     
   
   <div>
-    <img [src]='tvShow.image' width="100" height="150"/>
-    <span>Rating:{{tvShow.rating}} </span>
+    <img [src]='tvShow.image' width="200" height="300"/>
+    <br/>
+    <span>Rating: {{tvShow.rating}} </span>
     <br /> 
     
-    <span>Genres:{{tvShow.genres}}</span>
+    <span>Genres: {{tvShow.genres}}</span>
   </div>
   
   
-   <span>{{tvShow.description}}</span> 
+   <span class="description">Description: {{tvShow.description}}</span> 
  
 
 
