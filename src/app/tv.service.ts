@@ -4,6 +4,7 @@ import {InewTVshowData} from './inew-tvshow-data'
 import { ITvShowApp } from './i-tv-show-app';
 import { pipe } from 'rxjs';
 import {map} from 'rxjs/operators';
+//import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,10 +13,14 @@ export class TvService {
 
   constructor(private httpClient:HttpClient) { }
 
-  getTvShowInformation(name : string){
+  getTvShowInformation(search : string){
+    let showName ='';
+    if (typeof search === 'string'){
+      showName = `q=${search}`
+    }
 
     return this.httpClient.get<InewTVshowData> (
-      `http://api.tvmaze.com/singlesearch/shows?q=:${name}`
+      `http://api.tvmaze.com/singlesearch/shows?${showName}`
 
     )
       .pipe(
@@ -31,6 +36,8 @@ export class TvService {
         id : data.id,
         rating: data.rating.average,
         genres : data.genres[0],
+        premiered: data.premiered,
+        status: data.status,
         image: data.image.original,
         description:data.summary
        }

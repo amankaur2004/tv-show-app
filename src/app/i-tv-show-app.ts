@@ -6,6 +6,8 @@ export interface ITvShowApp {
   //airdate: string,
   //creator:string,
   genres: string,
+  premiered:string,
+  status:string
   //cast: string,
    image: string,
   description:string

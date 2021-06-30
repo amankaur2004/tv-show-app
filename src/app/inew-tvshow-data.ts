@@ -5,7 +5,9 @@ export interface InewTVshowData {
         average : number
     },
     genres : string[], 
-    //premiered: string,
+    
+    premiered: string,
+    status:string,
     image : {
         original:string, 
 

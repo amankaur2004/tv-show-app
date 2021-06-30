@@ -1,16 +1,16 @@
 
 <div style="text-align: center;">
-<mat-toolbar color="primary"><img class="img-responsive" src="assets/tv_logo.png" width="60px" alt="tv logo"/>
-  TV Show Scavenger! </mat-toolbar>
-  <!--<div>show name,image,discription!</div>-->
-  <h2 style=color:purple >
-      TV SHOW SEARCHER
-  </h2>
-  <app-tv-searchbox></app-tv-searchbox>
-<mat-card color="primary">
-  <app-tv-show-result></app-tv-show-result>
-</mat-card>
+  <mat-toolbar color="primary"><img class="img-responsive" src="assets/tv_logo.png" width="60px" alt="tv logo"/>
+    TV Show Scavenger! </mat-toolbar>
+    <!--<div>show name,image,discription!</div>-->
+    <h2 style=color:purple >
+        TV SHOW SEARCHER
+    </h2>
+    <app-tv-searchbox (searchEvent)="doSearch($event)"></app-tv-searchbox>
   <mat-card color="primary">
-  <app-tv-show-details></app-tv-show-details>
-</mat-card>
-</div>
+    <app-tv-show-result [tvShow]="currentShow"></app-tv-show-result>
+  </mat-card>
+    <mat-card color="primary">
+    <app-tv-show-details></app-tv-show-details>
+  </mat-card>
+  </div>
