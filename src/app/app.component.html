@@ -7,18 +7,14 @@
         TV SHOW SEARCHER
     </h2>
     <app-tv-searchbox (searchEvent)="doSearch($event)"></app-tv-searchbox>
-
     
-  <mat-card color="primary">
-    <app-tv-show-result [tvShow]="currentShow"></app-tv-show-result>
-  </mat-card>
-  
-   
-      <mat-card color="primary">
-    <app-tv-show-details [epi]="currentShow"></app-tv-show-details>
-  </mat-card>
-  
-
-  <app-live-stream> </app-live-stream>
+    <mat-card color="primary">
+      <app-tv-show-result [tvShow]="currentShow"></app-tv-show-result>
+    </mat-card>
+    
+    <mat-card color="primary">
+      <app-tv-show-details [epi]="currentShow"></app-tv-show-details>
+    </mat-card>
+    <app-live-stream *ngIf="currentShow"> </app-live-stream>
 
   </div>

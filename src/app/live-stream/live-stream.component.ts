@@ -11,24 +11,13 @@ import { NewLiveShowService } from '../new-live-show.service';
 export class LiveStreamComponent implements OnInit {
 
   liveShow2: IliveShow[] = [];
-
   constructor(private newLiveShow: NewLiveShowService) { }
 
-ngOnInit() {
- //this.newLiveShow.getLiveStreamSchedule().subscribe((data) => {this.liveShow2 = data.slice(0,5)})
-this.newLiveShow.getLiveStreamSchedule()
-    .subscribe(data => this.liveShow2 = data.slice(0,5))
-   
-    //.subscribe((data) => {
-      //this.liveShow2 = data.slice(0, 5);
-   // });
-
-   //console.log('aman')
-
-  
-
-
-}
+  ngOnInit() {
+    this.newLiveShow.getLiveStreamSchedule()
+      .subscribe(data => this.liveShow2 = data.slice(0,5))
+    console.log(this.liveShow2)
+  }
 
 
 }

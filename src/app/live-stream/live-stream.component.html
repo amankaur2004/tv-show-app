@@ -1,13 +1,13 @@
 <h3>Popular Shows Airing Tonight</h3>
     <ol class="unstyled-list-group" *ngIf="liveShow2">
-      <div *ngFor="let el of liveShow2">
+      <div *ngFor="let show of liveShow2">
         <li class="horizontal">
             <div class="grid-container">
                 <div class="media-image">
-                  <img src="{{ el.image }}"  alt="{{ el.name }}" /> 
+                  <img src="{{ show.image }}"  alt="{{ show.name }}" /> 
                 </div>
                 <div class="media-header">
-                  <div id="name">{{ el.name }}</div>
+                  <div id="name">{{ show.name }}</div>
                 </div>
             </div>
         </li>
