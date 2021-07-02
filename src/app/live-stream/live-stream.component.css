@@ -1,0 +1,29 @@
+.horizontal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+    float : left
+
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color : rgb(165, 42, 128)
+}
+
+.media-header {
+    display: block;
+    font-size: 1 em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color : rgb(165, 42, 128)
+}

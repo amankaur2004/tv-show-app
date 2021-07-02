@@ -18,13 +18,15 @@ import{MatFormFieldModule} from '@angular/material/form-field';
 import{MatInputModule}from '@angular/material/input';
 import{MatTabsModule}from'@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
+import { LiveStreamComponent } from './live-stream/live-stream.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TvShowResultComponent,
     TvShowDetailsComponent,
-    TvSearchboxComponent
+    TvSearchboxComponent,
+    LiveStreamComponent
   ],
   imports: [
     BrowserModule,
