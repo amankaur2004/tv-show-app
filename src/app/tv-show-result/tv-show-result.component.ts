@@ -15,7 +15,14 @@ export class TvShowResultComponent implements OnInit {
         premiered:'',
         status:'',
         image: '' ,
-        description: ''
+        description: '',
+        epiUrl: '',
+        epiName: '',
+        season: '',
+         epiNumber: '',
+         airdate: '',
+         epiImage: '',
+         epiSummary: '' 
   }
   constructor(){ 
     

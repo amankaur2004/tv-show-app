@@ -1,0 +1,31 @@
+.mainTable {
+  margin-top: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  border: 1px solid black;
+  border-collapse:collapse;
+  /* width: 1400px; */
+  background-color:rgb(221, 214, 241);
+  align-self: center;
+}
+
+
+
+
+.column5 {
+  width: 300px;
+}
+
+.test td {
+  text-align: left;
+  padding-right: 40px;
+}
+
+th{
+  font-size: 30px
+}
+
+img{
+  display: block;
+}

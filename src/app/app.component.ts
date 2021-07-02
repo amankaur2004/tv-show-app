@@ -18,7 +18,14 @@ export class AppComponent {
         premiered:'',
         status:'',
         image: '' ,
-        description: ''
+        description: '',
+         epiUrl: '',
+        epiName: '',
+        season: '',
+         epiNumber: '',
+         airdate: '',
+         epiImage: '',
+         epiSummary: '' 
 }
 constructor(private tvService: TvService ){}
 doSearch(searchValue : string){

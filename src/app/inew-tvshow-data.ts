@@ -12,9 +12,24 @@ export interface InewTVshowData {
         original:string, 
 
     }, 
-    summary: string
+    summary: string,
+    _embedded: {
+     episodes: [
+         {
+           url: string
+          name: string
+         season: string
+           number: string
+         airdate: string
+          image: {
+             medium: string
+          }
+           summary: string
+         }
+       ]
 
 
 }
 
 
+}
