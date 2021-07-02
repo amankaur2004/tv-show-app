@@ -7,7 +7,7 @@ export interface ITvShowApp {
   premiered:string,
   status:string
   //cast: string,
-   image: string,
+  image: string,
   description:string,
   
   // episode

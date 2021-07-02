@@ -1,9 +1,9 @@
 
-  <div *ngIf="tvShow" class="api">
+  <div *ngIf="tvShow.name" class="api">
     <span class="tvname">Show Name: {{tvShow.name}}</span>  
     <br />
 
-  <div>
+  <div *ngIf="tvShow.name">
     <img [src]='tvShow.image' width="200" height="300"/>
     <br/>
     <span>Rating: {{tvShow.rating}} </span>
@@ -13,10 +13,10 @@
     <br/>
     <section>ID: {{tvShow.id}}</section>
     <section>Premiered: {{tvShow.premiered}} | Status: {{tvShow.status}}</section>
+    <span class="description"> Description: {{tvShow.description}}</span> 
   </div>
-  
-  
-   <span class="description"> Description: {{tvShow.description}}</span> 
+
+   
  
 
 

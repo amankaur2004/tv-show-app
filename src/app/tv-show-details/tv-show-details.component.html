@@ -3,9 +3,8 @@
 
 
 
- <h2 style="font-size: 25px;"><b>TV-show-Episodes details!</b></h2> 
-
- <div *ngIf="epi">
+ <h2 *ngIf="epi.epiName" style="font-size: 25px;"><b>TV-show-Episodes details!</b></h2> 
+ <div *ngIf="epi.epiName">
    <div style="overflow-x:auto;" class="mainTable"     
      [innerHTML]=getEpisodes()>
    </div> 
