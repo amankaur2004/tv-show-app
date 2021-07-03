@@ -6,6 +6,13 @@
 
 }
 
+* {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.3em;
+    margin-left: 15px;
+  }
+
 h3 {
     display: block;
     font-size: 1.17em;
@@ -14,7 +21,7 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    color : rgb(165, 42, 128)
+    color : rgb(82, 7, 58)
 }
 
 .media-header {
@@ -25,5 +32,12 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    color : rgb(165, 42, 128)
+    color : rgb(90, 65, 105)
 }
+
+img{
+    margin: 15px;
+    background-color: rgb(208, 194, 248);
+
+}
+
