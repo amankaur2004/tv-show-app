@@ -15,7 +15,7 @@ export class LiveStreamComponent implements OnInit {
 
   ngOnInit() {
     this.newLiveShow.getLiveStreamSchedule()
-      .subscribe(data => this.liveShow2 = data.slice(0,5))
+      .subscribe(data => this.liveShow2 = data.slice(0,6))
     console.log(this.liveShow2)
   }
 

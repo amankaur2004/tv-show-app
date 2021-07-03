@@ -34,3 +34,4 @@ doSearch(searchValue : string){
           this.tvService.getTvShowInformation(userInput[0]).subscribe(data => this.currentShow=data)
 }
 }
+

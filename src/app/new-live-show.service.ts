@@ -15,8 +15,10 @@ export class NewLiveShowService {
   constructor(private httpClient:HttpClient) { }
 
   getLiveStreamSchedule () {
+    let date;
+    date = new Date().toISOString().substring(0, 10)
     return this.httpClient.get<IliveShowData[]> (
-     'https://api.tvmaze.com/schedule?').pipe(
+     `https://api.tvmaze.com/schedule?date=${date}`).pipe(
      map((data) => data.map((show) => this.IliveShowTransform(show)))
     )
  }
