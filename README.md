@@ -1,5 +1,5 @@
 # TvShowApp
-This project was generated with Angular CLI version 12.0.4. We utilized TVMaze API for this project.
+This project was generated with Angular CLI version 12.0.4. TVMaze API was used for this project and can be found here: https://www.tvmaze.com/api
 
 
 
