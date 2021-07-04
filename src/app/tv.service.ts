@@ -39,7 +39,7 @@ export class TvService {
   }
 
   private transformToItvshowApp (data : InewTVshowData) : ITvShowApp {
-    // Get all elements from the <episodes>
+    // Get all elements from the episodes
     let myEpiArr = data._embedded.episodes;
     let epiUrls = [];
     let epiNames = [];
@@ -79,7 +79,7 @@ export class TvService {
         status: data.status,
         image: data.image.original,
         description:data.summary,
-
+          //episodes
         epiUrl: epiUrlsStr,
         epiName: epiNamesStr,
         season: seasonsStr,
