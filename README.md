@@ -11,7 +11,7 @@ This project demonstrates various  features and concepts such as:
 5.	observables
 6.	typescript
 
-The video can be found here: https://www.youtube.com/watch?v=L6fIz0Di7uM&ab_channel=AmanKaur
+You can watch demonstration video here: https://www.youtube.com/watch?v=L6fIz0Di7uM&ab_channel=AmanKaur
 
 ## Development server
 
