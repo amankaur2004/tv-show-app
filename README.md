@@ -2,7 +2,7 @@
 This project was generated with Angular CLI version 12.0.4. TVMaze API was used for this project and can be found here: https://www.tvmaze.com/api
 
 
-A simple app built using Angular. This project demonstrates various  features and concepts such as:
+This project demonstrates various  features and concepts such as:
 
 1.	http
 2.	reactive forms
