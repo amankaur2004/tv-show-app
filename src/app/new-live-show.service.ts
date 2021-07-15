@@ -24,9 +24,17 @@ export class NewLiveShowService {
  }
 
   private IliveShowTransform (data : IliveShowData) : IliveShow {
+    if(data.show.image!=null){
     return {
       name : data.show.name,
       image : data.show.image.medium,
     }
+  }
+  else{
+    return {
+      name : data.show.name,
+      image : "",
+    }
+  }
   }
 }
